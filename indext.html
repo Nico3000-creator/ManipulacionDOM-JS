@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rework de formularios y expresiones</title>
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <div id="grupo_usuario">
+                <label for="">Usuario</label>
+                    <div>
+                        <input 
+                        type="text" 
+                        name="usuario" 
+                        id="usuario" 
+                        placeholder="Ariel123">
+                    </div>
+                    <p class="formulario__input-error">
+                        El usuario tiene que ser de 4 a 16 digitos y solo puede contener letras y numeros, guino bajo
+                    </p>
+            </div>
+            <div id="grupo_nombre">
+                <label for="">Nombre</label>
+                    <div>
+                        <input 
+                        type="text" 
+                        name="nombre" 
+                        id="nombre" 
+                        placeholder="Ariel tecay">
+                    </div>
+                    <p class="formulario__input-error">
+                        el nombre debe tener letras y espacios, pueden llevar acento
+                    </p>
+            </div>
+            <div id="grupo_telefono">
+                <label for="">Telefono</label>
+                    <div>
+                        <input 
+                        type="number"
+                        name="telefono" 
+                        id="telefono" 
+                        placeholder="1897231498">
+                    </div>
+                    <p class="formulario__input-error">
+                        El telefono debe contener solo numeros
+                    </p>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./scrypt.js"></script>
+</body>
+</html>
